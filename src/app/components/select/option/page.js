@@ -1,11 +1,9 @@
 import React from 'react';
 import './style.css';
 
-function Page(props) {
+const Page = ({name}) => {
     return (
-        <div class="form-group">
-            
-        </div>
+        <option value={name}>{name}</option>
     );
 }
 
