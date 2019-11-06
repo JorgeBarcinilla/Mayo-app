@@ -5,6 +5,7 @@ import FormGroupDoublePlus from '../formGroupDoublePlus';
 import './style.css';
 
 const Page = ({resources}) => {
+    console.log(resources)
     return (
         <form>
             <h3>Personaliza tu telefono MAYO</h3>
@@ -32,15 +33,15 @@ const Page = ({resources}) => {
             <FormGroupDoublePlus
                 id='sensor'
                 title='Sensores'
-                selects = {[{name:'Tipo', options:resources.pantallas}]}
+                selects = {[{name:'Tipo', options:resources.sensores}]}
             />
             <FormGroupSingle
                 title='Memoria RAM'
-                selects = {[{name:'Capacidad', options:resources.pantallas}]}
+                selects = {[{name:'Capacidad', options:resources.rams}]}
             />
             <FormGroupSingle
                 title='Memoria ROM'
-                selects = {[{name:'Capacidad', options:resources.pantallas}]}
+                selects = {[{name:'Capacidad', options:resources.roms}]}
             />
             <button className="btn btn-info float-right" type="submit">Ordenar</button>
         </form>

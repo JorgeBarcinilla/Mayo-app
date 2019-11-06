@@ -8,15 +8,15 @@ class Form extends Component {
         super();
     
         this.state = {
-            materiales: [''],
-            colores: [''],
-            tamaños: [''],
-            baterias: [''],
-            pantallas: [''],
-            camaras: [''],
-            sensores: [''],
-            rams: [''],
-            roms: ['']
+            materiales: [],
+            colores: [],
+            tamaños: [],
+            baterias: [],
+            pantallas: [],
+            camaras: [],
+            sensores: [],
+            rams: [],
+            roms: []
         }
     }
 
@@ -45,7 +45,7 @@ class Form extends Component {
         var resources = this.state;
         
         return(
-            <Page
+            <Page {...this.state}
                 resources = {resources}
             />
         ); 

@@ -5,15 +5,13 @@ class Select extends Component {
 
     constructor(props){
     super(props);
-        this.name = props.name;
-        this.options = props.options;
     }
     
     render() {
         return(
             <Page
-                name = {this.name}
-                options = {this.options}
+                name = {this.props.name}
+                options = {this.props.options}
             />
         ); 
     }

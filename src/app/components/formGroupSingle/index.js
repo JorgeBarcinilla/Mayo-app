@@ -5,8 +5,6 @@ class FormGroupSingle extends Component {
 
     constructor(props){
     super(props);
-        this.title = props.title;
-        this.selects = props.selects;
     }
 
     componentDidMount(){
@@ -15,8 +13,8 @@ class FormGroupSingle extends Component {
     render() {
         return(
             <Page 
-                title = {this.title}
-                selects = {this.selects}
+                title = {this.props.title}
+                selects = {this.props.selects}
             />
         ); 
     }

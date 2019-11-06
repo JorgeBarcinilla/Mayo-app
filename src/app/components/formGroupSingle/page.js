@@ -4,6 +4,7 @@ import Select from '../select';
 
 const Page = ({title, selects}) => {
 
+    
     return (
         <div className="form-group">
              <label>{title}</label>
